@@ -6,4 +6,7 @@ Cada sección contiene un breve descripción del proyecto, vistas de los tablero
 Proyecto: Análisis de mercado inmobiliario
 -------------
 
-![](images/powerBI_2.png)
+![](images/PowerBI_1.png)
+
+![](images/PowerBI_2.png)
+
