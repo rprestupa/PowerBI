@@ -31,7 +31,7 @@ Con el objetivo de visualizar las variaciones en el precio del metro cuadrado, s
 Por último, se incluyen influenciadores clave sobre el valor de las propiedades. En relación alos factores que explican los precios mas altos, el factor mas sobresaliente es la ubicación del inmueble en Puerto Madero, seguido del número de ambientes y de dormitorios. En relación los factores que determinan precios bajos, se encuentra que influye de forma notable la cantidad de ambientes y dormitorios.    
 
 <br><br>
-![](images/PowerBI_1.png)
+![](images/inmo1.png)
 <br><br>
 ### Propiedades destinadas a Vivienda
 
