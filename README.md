@@ -15,7 +15,12 @@ Se cargó el set de datos en la aplicación de escritorio MSPowerBI con el objet
 
 Se advirtió que del total de 146661 registros que contenía el archivo original, al cargarlo a PowerBI se multiplicaba la cantidad de filas, dando como resultado un total de 414146.  Para resolverlo, se utilizó como parámetro el campo que contiene el nombre del país, ya que la misma debería contener un solo dato único (Argentina). Se utilizó el filtro de  columna para comprobar que, en efecto, tal columna contenía datos irregulares, que fueron eliminados del modelo.<br>
 
-Se renombraron las columnas País, Zona (Capital Federal, GBA Zona Sur, GBA Zona Norte y GBA Zona Oeste), Área (que contiene el nombre de los barrios/localidades) y se asignaron las categorías de datos correspondientes a las columnas de Longitud y Latitud y a las que contienen nombre del país, provincia, ciudad, etc. y se agregó una columna que calcula el valor del metro cuadrado.  <br><br>
+Se renombraron las columnas País, Zona (Capital Federal, GBA Zona Sur, GBA Zona Norte y GBA Zona Oeste), Área (que contiene el nombre de los barrios/localidades) y se asignaron las categorías de datos correspondientes a las columnas de Longitud y Latitud y a las que contienen nombre del país, provincia, ciudad, etc. y se agregó una columna que calcula el valor del metro cuadrado.  <br>
+
+Se eliminaron registros con datos nulos en superficie_total, tipo de propiedad. <br>
+
+Se encontraron valores extremos en la superficie total, que fueron corregidos comparando con la superficie declarada en la descripción del inmueble (por ejemplo, 140000 metros cuadrados cuando la descripción señala 140.00 metros cuadrados). En los casos que no fue posible obtener el valor de la descricpción, se imputó el promedio de la superficie total para ese segmento. <br><br>
+
 
 _Herramientas elegidas para la visualización_ <br>
 En primera instancia se analizan los datos del total de las propiedades.  <br>
@@ -23,7 +28,7 @@ Se incluye una tarjeta que muestra el total de propiedades activas durante el a�
 Se utilizó un gráfico de dona para mostrar la distribución por zona.  <br>
 Se usó un gráfico de columnas para mostrar el valor promedio del metro cuadrado en cada una de las zonas. <br>
 Con el objetivo de visualizar las variaciones en el precio del metro cuadrado, se incluye un gráfico de líneas, que muestra el valor promedio del metro cuadrado en cada mes del año 2019, permitiendo comparar entre zonas.  <br>
-Por último, se incluyen influenciadores clave sobre el valor de las propiedades.  
+Por último, se incluyen influenciadores clave sobre el valor de las propiedades. En relación alos factores que explican los precios mas altos, el factor mas sobresaliente es la ubicación del inmueble en Puerto Madero, seguido del número de ambientes y de dormitorios. En relación los factores que determinan precios bajos, se encuentra que influye de forma notable la cantidad de ambientes y dormitorios.    
 
 <br><br>
 ![](images/PowerBI_1.png)
@@ -48,9 +53,9 @@ Se obtiene el valor promedio por Zona: se comparan 4 zonas urbanas y suburbanas 
 Se incluyen 4 filtros que permitirán segmentar el total de datos en función de las siguientes características:  zona, cantidad de ambientes, precio máximo y tipo de propiedad. El total de propiedades encontradas en función de los filtros aplicados se muestra en la tarjeta mencionada. <br>
 
 Valores incluidos en los filtros:  <br>
-***Filtro por número de ambientes***: a los fines del presente análisis, se elimina en la segmentación los registros con valores extremos en la variable número de ambientes. Los valores extremos quedan definidos como aquellos que superan en 2 veces el desvío estándar. Para esto se obtiene el promedio de ambientes (3.13) y el desvío estándar (1.39). Se fijó el valor máximo para ese segmentador la cantidad en 6. El porcentaje de registros con valores extremos en el número de ambientes fue de 2.2%. <br><br>
+***Filtro por número de ambientes***: a los fines del presente análisis, se elimina en la segmentación los registros con valores extremos en la variable número de ambientes. Los valores extremos quedan definidos como aquellos que superan en 1,5 veces el desvío estándar. Para esto se obtiene el promedio de ambientes (3.13) y el desvío estándar (1.39). Se fijó el valor máximo para ese segmentador la cantidad en 5. El porcentaje de registros con valores extremos en el número de ambientes fue de 2.2%. <br><br>
 Se incluye un mapa que permite visualizar áreas de mayor o de menor concentración de las propiedades listadas. El mapa es interactivo y se actualiza en función de los filtros activos.  <br><br>
-Se utiliza una tabla que contiene la distribución por barrio/localidad.  <br><br>
+Se utiliza una tabla que contiene la distribución por barrio/localidad, y el valor promedio en función de los filtros aplicados. También permite comparar el promedio obtenido para el segmento elegido con el promedio total.  <br><br>
 Se incluye un grafico de columnas apiladas para visualizar la composición relativa de la variable *Tipo de propiedad*, comparando entre zonas.  
 <br>
 <br>
