@@ -59,5 +59,5 @@ Se utiliza una tabla que contiene la distribución por barrio/localidad, y el va
 Se incluye un grafico de columnas apiladas para visualizar la composición relativa de la variable *Tipo de propiedad*, comparando entre zonas.  
 <br>
 <br>
-![](images/PowerBI_2.png)
+![](images/inmo2.png)
 
