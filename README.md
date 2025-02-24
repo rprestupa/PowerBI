@@ -5,6 +5,14 @@ En este repositorio podrás encontrar algunos de mis proyectos realizados con MS
 Cada sección contiene un breve descripción del proyecto, vistas de los tableros, los pasos realizados para la visualización y el análisis y link al set de datos.<br><br><br><br>
 
 
+Proyecto: Visualización y análisis de Ventas (Adventure Works)
+-------------
+<br><br>
+![](images/inmo1.png)
+<br><br>
+
+<br><br><br><br>
+
 Proyecto: Visualización y análisis de datos de mercado inmobiliario - año 2019
 -------------
 
