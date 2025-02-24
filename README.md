@@ -8,7 +8,7 @@ Cada sección contiene un breve descripción del proyecto, vistas de los tablero
 Proyecto: Visualización y análisis de Ventas (Adventure Works)
 -------------
 <br><br>
-![](images/inmo1.png)
+![](images/Im_git1.png)
 <br><br>
 
 <br><br><br><br>
