@@ -11,6 +11,10 @@ Proyecto: Visualización y análisis de Ventas (Adventure Works)
 ![](images/Im_git1.png)
 <br><br>
 
+
+<br><br>
+![](images/Im_git2.png)
+
 <br><br><br><br>
 
 Proyecto: Visualización y análisis de datos de mercado inmobiliario - año 2019
